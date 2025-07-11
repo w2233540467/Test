@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坦克大战</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>坦克大战</h1>
+            <div class="score-board">
+                <div class="score">分数: <span id="score">0</span></div>
+                <div class="lives">生命: <span id="lives">3</span></div>
+                <div class="level">关卡: <span id="level">1</span></div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            
+            <div id="gameMenu" class="game-menu">
+                <h2>坦克大战</h2>
+                <button id="startBtn" class="menu-btn">开始游戏</button>
+                <button id="instructionsBtn" class="menu-btn">游戏说明</button>
+            </div>
+            
+            <div id="gameOver" class="game-over hidden">
+                <h2>游戏结束</h2>
+                <p>最终分数: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="menu-btn">重新开始</button>
+                <button id="menuBtn" class="menu-btn">返回菜单</button>
+            </div>
+            
+            <div id="instructions" class="instructions hidden">
+                <h3>游戏说明</h3>
+                <ul>
+                    <li>使用 WASD 或方向键移动坦克</li>
+                    <li>使用空格键射击</li>
+                    <li>消灭所有敌方坦克过关</li>
+                    <li>避免被敌方坦克击中</li>
+                    <li>保护你的基地不被摧毁</li>
+                </ul>
+                <button id="backBtn" class="menu-btn">返回</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <p>控制说明: WASD移动，空格射击，P暂停</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
