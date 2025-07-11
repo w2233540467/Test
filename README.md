@@ -55,10 +55,14 @@
 
 ## 如何运行
 
-### 方法1: 直接打开
+### 方法1: 在线访问（推荐）
+直接访问 GitHub Pages 部署的版本：
+**https://w2233540467.github.io/**
+
+### 方法2: 直接打开
 直接用浏览器打开 `index.html` 文件即可开始游戏。
 
-### 方法2: 本地服务器
+### 方法3: 本地服务器
 ```bash
 # 使用Python 3
 python3 -m http.server 8000
@@ -71,6 +75,23 @@ php -S localhost:8000
 ```
 
 然后在浏览器中访问 `http://localhost:8000`
+
+## GitHub Pages 部署
+
+本项目已配置自动部署到 GitHub Pages：
+
+### 自动部署
+- 每当推送到 `main` 或 `master` 分支时自动部署
+- 使用 GitHub Actions 工作流程自动构建和发布
+- 部署到 `https://w2233540467.github.io/`
+
+### 手动部署设置
+如果需要手动设置 GitHub Pages：
+
+1. 进入 GitHub 仓库设置页面
+2. 找到 "Pages" 选项
+3. 在 "Source" 中选择 "GitHub Actions"
+4. 推送代码后会自动部署
 
 ## 游戏截图预览
 
